@@ -6,7 +6,7 @@ const app = express();
 
 // The requested "/greetings/:name" route. 
 app.get('/greetings/:name', (req, res)=> {
-    res.send(`Hello, ${req.params.name}`)
+    res.send(`Hello, ${req.params.name}!`)
 })
 
 //default route. All routes except "/greetings/:name" go to here.
